@@ -1,0 +1,15 @@
+extends default
+
+block content
+  div.container
+
+    table.products 
+        tr 
+            th Amount Per Order
+            th Product
+            th Price
+        each r in results
+            tr
+                td=r.prAmount
+                td=r.prName
+                td=r.prPrice

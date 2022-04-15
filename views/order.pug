@@ -1,0 +1,69 @@
+extends default
+
+block content
+  div.container
+  
+        form(action="/orderProcess" method="post")  
+            table        
+                tr 
+                    td 
+                        label(for="name") Name:
+                    td 
+                        input#name(type="text" name="name")
+                tr 
+                    td 
+                        label(for="phone") Phone:
+                    td
+                        input#phone(type="tel" name="phone")
+                tr 
+                    td 
+                        label(for="email") Email:
+                    td 
+                        input#email(type="text" name="email")
+                tr 
+                    td 
+                        label(for="ccc") Chocolate Chip Cookies:
+                    td 
+                        input#ccc(type="number" name="ccc" min="0" max="100" value="0")
+                tr 
+                    td 
+                        label(for="pbc") Peanut Butter Cookies:
+                    td 
+                        input#pbd(type="number" name="pbc" min="0" max="100" value="0")
+                tr 
+                    td 
+                        label(for="cc") Chocolate Cupcakes:
+                    td 
+                        input#cc(type="number" name="cc" min="0" max="100" value="0")
+                tr 
+                    td 
+                        label(for="vc") Vanilla Cupcakes:
+                    td 
+                        input#vc(type="number" name="vc" min="0" max="100" value="0")
+                tr 
+                    td 
+                        label(for="cb") Chocolate Babka:
+                    td 
+                        input#cb(type="number" name="cb" min="0" max="100" value="0")
+                tr 
+                    td 
+                        label(for="vb") Vanilla Babka:
+                    td 
+                        input#vb(type="number" name="vb" min="0" max="100" value="0")
+                tr 
+                    td 
+                        label(for="cnb") Cinnamon Babka:
+                    td 
+                        input#cnb(type="number" name="cnb" min="0" max="100" value="0")
+                tr 
+                    td 
+                        label(for="ar") Assorted Rugelach:
+                    td 
+                        input#ar(type="number" name="ar" min="0" max="100" value="0")
+                tr(style="text-align: center;")
+                    td(colspan="2")
+                        label *Payment Upon Pickup*
+                
+                tr(style="text-align: center;")
+                    td(colspan="2")
+                        input(type="submit" name="submit" value="Place My Order!")

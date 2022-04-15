@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    title #{title}
+    link(rel='stylesheet', href='/styles.css')
+    link(rel='stylesheet', href='/slimmenu.min.css')
+    script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+  body
+    br
+    ul.slimmenu#navigation
+        li
+            a(href="/") Home
+        li 
+            a(href="/products") Products
+        li
+            a(href="/contact") Contact Us
+        li 
+            a(href="/order") Place an Order 
+    script(src="/jquery.slimmenu.min.js")
+
+    main
+      block header
+        header.header
+          h1 #{title}
+      block content
+
+      
